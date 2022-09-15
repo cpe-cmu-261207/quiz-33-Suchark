@@ -9,16 +9,26 @@ export default function Home() {
       style={{ minHeight: "100vh", backgroundColor: "#18191A" }}
       className="p-3"
     >
-      {/* Entire App Container */}
       <div
         style={{ maxWidth: "700px", backgroundColor: "#242526" }}
         className="mx-auto p-3 rounded rounded-3 shadow-sm"
       >
-        <div>
-          <PostOwner />
-          <comments />
-          <Reply />
-        </div>
+        {/ PostOwner Example/}
+        <PostOwner />
+
+        {/ Comment Example */}
+        {comments.map((comment, key) => {
+          return (
+            <Comment
+              key={key}
+              likeNum={comment.likeNum}
+              username={comment.username}
+              content={comment.commentText}
+              profileImg={comment.userImagePath}
+              replies={comment.replies}
+            />
+          );
+        })}
       </div>
     </div>
   );
