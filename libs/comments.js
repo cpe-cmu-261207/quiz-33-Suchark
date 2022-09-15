@@ -1,7 +1,7 @@
 export const comments = [
   {
     username: "Lisa",
-    userImagePath: "/profileImages/1011.jpg",
+    userImagePath: "/profileImages/lisa.jpg",
     commentText: "จริงค่า",
     likeNum: 999,
     replies: [
