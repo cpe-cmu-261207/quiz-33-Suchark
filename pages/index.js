@@ -13,10 +13,7 @@ export default function Home() {
         style={{ maxWidth: "700px", backgroundColor: "#242526" }}
         className="mx-auto p-3 rounded rounded-3 shadow-sm"
       >
-        {/ PostOwner Example/}
         <PostOwner />
-
-        {/ Comment Example */}
         {comments.map((comment, key) => {
           return (
             <Comment
